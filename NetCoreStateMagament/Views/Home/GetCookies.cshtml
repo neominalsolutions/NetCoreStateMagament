@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "GetCookies";
+}
+
+@{
+  // viewden veri okumak için viewcontext kullanırız.
+  // viewden cookie değerlerini okumak istersek
+  var username = ViewContext.HttpContext.Request.Cookies["username"];
+  var email = ViewContext.HttpContext.Request.Cookies["email"];
+  var path = ViewContext.HttpContext.Request.Path;
+  var controllerName = ViewContext.HttpContext.Request.RouteValues["Controller"];
+  var actionName = ViewContext.HttpContext.Request.RouteValues["Action"];
+  var queryString = ViewContext.HttpContext.Request.Query["id"];
+  var queryStringName = ViewContext.HttpContext.Request.Query["name"];
+  var message = ViewContext.ViewBag.Message;
+}
+
+<p>
+  Mesaj : @message
+</p>
+
+<p>
+  QueryString id: @queryString
+</p>
+
+<p>
+  QueryString name: @queryStringName
+</p>
+<p>
+  Url: @path
+</p>
+<p>
+  ControllerName: @controllerName 
+</p>
+<p>
+  ActionName: @actionName
+</p>
+<h1>
+
+  Email: @email
+  UserName: @username
+
+</h1>
+

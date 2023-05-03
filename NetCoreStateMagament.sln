@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreStateMagament", "NetCoreStateMagament\NetCoreStateMagament.csproj", "{6FD202BA-5BC9-46A6-8FB5-EF1E54EC7951}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FD202BA-5BC9-46A6-8FB5-EF1E54EC7951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FD202BA-5BC9-46A6-8FB5-EF1E54EC7951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FD202BA-5BC9-46A6-8FB5-EF1E54EC7951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FD202BA-5BC9-46A6-8FB5-EF1E54EC7951}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {654D9EE8-2E38-4D46-8A4D-15174C788C1F}
+	EndGlobalSection
+EndGlobal

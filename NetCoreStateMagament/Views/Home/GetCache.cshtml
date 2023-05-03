@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "GetCache";
+
+}
+@using Microsoft.Extensions.Caching.Memory;
+@inject IMemoryCache cache
+
+@{
+  // cache servisi viewden çağırmak için viewcontext kullanmıyoruz. direk IMemoryCache servis üzerinden @inject ile view dependecy injection yapıyoruz.
+  var model = cache.Get<List<CacheModel>>("Ids") ?? new List<CacheModel>();
+}
+
+<div>
+
+  @foreach (var item in model)
+  {
+    <div>@item.Id</div>
+  }
+
+</div>
+
+
+

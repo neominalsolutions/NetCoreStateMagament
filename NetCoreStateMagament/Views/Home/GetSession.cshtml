@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "GetSession";
+
+}
+@using System.Text.Json
+@*@inject ISession session*@
+
+@{
+  var session = ViewContext.HttpContext.Session;
+}
+
+@model SessionModel
+
+<p>
+  SessionId: @Model.SessionId
+</p>
+
+<p>
+   @{
+    // string olduğu için direkt okuruz
+    var username = session.GetString("username");
+    // obje tanımlı olduğundan deserilize ettik
+    var m = JsonSerializer.Deserialize<SessionModel>(session.GetString("sessionModel"));
+  };
+
+  Username: @username
+  SessionId: @m.SessionId
+</p>
